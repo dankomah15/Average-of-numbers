@@ -1,17 +1,22 @@
-const score = (prompt("Enter your score"))
-if(score >= 70){
-    console.log("You got an A");
+let sum = 0;
+
+// Get the number of numbers from the user
+let noOfNumbers = 
+parseInt(prompt("Enter the number of numbers:"));
+
+// Loop to get input numbers and calculate the sum
+for (let i = 0; i < noOfNumbers; i++)
+{
+    let number = 
+    parseFloat(prompt("Enter a number"));
+    sum = sum + number;
 }
-else if (score >= 60){
-    console.log("You got a B");
-}
-else if (score >= 50){
-    console.log("You got a C");
-}
-else if (score >= 40){
-    console.log("You got a D");
-}
-else{
-    console.log("You got an F")
-}
+
+// calculate the average
+let average = sum/noOfNumbers;
+
+//Display the result
+console.log("The average is: " + average);
+alert("The average is: " + average);
+
 
